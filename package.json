@@ -1,7 +1,7 @@
 {
-  "name": "istarancho",
+  "name": "instarancho",
   "version": "1.1.1",
-  "description": "IstaRancho: An Ionic project",
+  "description": "InstaRancho: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
