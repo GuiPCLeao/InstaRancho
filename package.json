@@ -1,7 +1,7 @@
 {
   "name": "instarancho",
   "version": "1.1.1",
-  "description": "InstaRancho: An Ionic project",
+  "description": "InstaRancho, a menu app for ITA students",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
