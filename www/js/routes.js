@@ -7,10 +7,10 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
 
-      .state('tabs.home', {
+
+
+  .state('tabs.home', {
     url: '/page1',
     views: {
       'tab9': {
@@ -26,10 +26,10 @@ angular.module('app.routes', [])
     controller: 'segundaFeiraCtrl'
   })
 
-  .state('terAFeira', {
+  .state('tercaFeira', {
     url: '/page3',
-    templateUrl: 'templates/terAFeira.html',
-    controller: 'terAFeiraCtrl'
+    templateUrl: 'templates/tercaFeira.html',
+    controller: 'tercaFeiraCtrl'
   })
 
   .state('quartaFeira', {
@@ -50,10 +50,10 @@ angular.module('app.routes', [])
     controller: 'sextaFeiraCtrl'
   })
 
-  .state('sBado', {
+  .state('sabado', {
     url: '/page8',
-    templateUrl: 'templates/sBado.html',
-    controller: 'sBadoCtrl'
+    templateUrl: 'templates/sabado.html',
+    controller: 'sabadoCtrl'
   })
 
   .state('domingo', {
@@ -66,8 +66,8 @@ angular.module('app.routes', [])
     url: '/page10',
     views: {
       'tab5': {
-        templateUrl: 'templates/caf.html',
-        controller: 'cafCtrl'
+        templateUrl: 'templates/cafe.html',
+        controller: 'cafeCtrl'
       }
     }
   })
@@ -76,8 +76,8 @@ angular.module('app.routes', [])
     url: '/page11',
     views: {
       'tab8': {
-        templateUrl: 'templates/almoO.html',
-        controller: 'almoOCtrl'
+        templateUrl: 'templates/almoco.html',
+        controller: 'almocoCtrl'
       }
     }
   })
@@ -106,8 +106,8 @@ angular.module('app.routes', [])
     url: '/page14',
     views: {
       'tab9': {
-        templateUrl: 'templates/notCias.html',
-        controller: 'notCiasCtrl'
+        templateUrl: 'templates/noticias.html',
+        controller: 'noticiasCtrl'
       }
     }
   })
@@ -120,6 +120,6 @@ angular.module('app.routes', [])
 
 $urlRouterProvider.otherwise('/tabs/page1')
 
-  
+
 
 });
