@@ -1,15 +1,11 @@
 angular.module('app.directives', [])
 
-/*.directive('sideMenuItemSetter', ['$compile', function($compile){
+/*.directive('setUiSref', [ function(){
         return{
             restrict: 'A',
-            link: function(scope, element, attrs){
-                //console.log(item.getId());
-                //element.$set("ui-sref", scope.UiSref_list[item.getId()]);
-                //element.attr("ui-sref","quartafeira");
-                element.removeAttr('side-menu-item-setter');
-                $compile(element)(scope);
+            link: function(scope, element, attrs, controller){
+                element.removeAttr("ui-sref");
+                element.attr("ui-sref","segundafeira");
             }
         };
-}]);
-*/
+}]);*/

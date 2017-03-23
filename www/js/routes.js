@@ -115,7 +115,7 @@ angular.module('app.routes', [])
   .state('tabs', {
     url: '/tabs',
     templateUrl: 'templates/tabs.html',
-    abstract:true
+    abstract: true
   })
 
 $urlRouterProvider.otherwise('/tabs/page1')

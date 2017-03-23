@@ -48,6 +48,7 @@
         padding-left:40px;
       }
     </style>
+    <link href="css/style.css" rel="stylesheet">
 
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
@@ -71,56 +72,23 @@
           <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
         </ion-nav-buttons>
       </ion-nav-bar>
-      <!--<ion-nav-view></ion-nav-view>-->
+      <ion-nav-view></ion-nav-view>
   </ion-side-menu-content>
 
     <ion-side-menu side="left" id="side-menu21">
-      <ion-header-bar class="bar-positive">
-        <div class="title">Cardápio da Semana</div>
+      <ion-header-bar class="bar-calm sideMenuHead">
+        <div class="title">
+            <i class="icon icon ion-ios-paper-outline"></i>
+            Cardápio da Semana
+        </div>
       </ion-header-bar>
-      <ion-content ng-controller="menuCtrl as sideMenu" padding="false" class="side-menu-left has-header ">
+      <ion-content ng-controller="menuCtrl" padding="false" class="side-menu-left has-header ">
         <ion-list id="menu-list1" data-componentid="list1">
-          <ion-item ng-repeat="it in sidemenuitens" side-menu-item-setter class="item-icon-left item-icon-right" ui-sref="tabs.home" menu-close="" data-componentid="">
-            <span>{{ it.getDayName() }}</span>
+          <ion-item ng-repeat="it in sidemenuitens" class="item-icon-left item-icon-right" menu-close="" data-componentid="">
+            <span>{{ it.getDayName()}}</span>
             <span class="item-note">{{it.getFormatedDate()}}</span>
             <i class="icon ion-chevron-right icon-accessory"></i>
           </ion-item>
-          <!--<ion-item class="item-icon-right" id="menu-list-item1" ui-sref="segundaFeira" menu-close="" data-componentid="list-item1">
-              Segunda-feira
-            <span class="item-note">13/03</span>
-            <i class="icon ion-chevron-right icon-accessory"></i>
-            <ion-option-button class="button-positive"></ion-option-button>
-          </ion-item>
-          <ion-item class="item-icon-right" id="menu-list-item2" ui-sref="terAFeira" menu-close="" data-componentid="list-item2">
-              Terça-feira
-            <span class="item-note">14/03</span>
-            <i class="icon ion-chevron-right icon-accessory"></i>
-          </ion-item>
-          <ion-item class="item-icon-right" id="menu-list-item3" ui-sref="quartaFeira" menu-close="" data-componentid="list-item3">
-              Quarta-feira
-            <span class="item-note">15/03</span>
-            <i class="icon ion-chevron-right icon-accessory"></i>
-          </ion-item>
-          <ion-item class="item-icon-right" id="menu-list-item4" ui-sref="quintaFeira" menu-close="" data-componentid="list-item4">
-              Quinta-feira
-            <span class="item-note">16/03</span>
-            <i class="icon ion-chevron-right icon-accessory"></i>
-          </ion-item>
-          <ion-item class="item-icon-right" id="menu-list-item5" ui-sref="sextaFeira" menu-close="" data-componentid="list-item5">
-              Sexta-feira
-            <span class="item-note">17/03</span>
-            <i class="icon ion-chevron-right icon-accessory"></i>
-          </ion-item>
-          <ion-item class="item-icon-right" id="menu-list-item6" ui-sref="sBado" menu-close="" data-componentid="list-item6">
-              Sábado
-            <span class="item-note">18/03</span>
-            <i class="icon ion-chevron-right icon-accessory"></i>
-          </ion-item>
-          <ion-item class="item-icon-right" id="menu-list-item7" ui-sref="domingo" menu-close="" data-componentid="list-item7">
-              Domingo
-            <span class="item-note">19/03</span>
-            <i class="icon ion-chevron-right icon-accessory"></i>
-        </ion-item>-->
         </ion-list>
       </ion-content>
   </ion-side-menu>

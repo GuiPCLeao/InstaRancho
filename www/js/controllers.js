@@ -12,9 +12,9 @@ function ($scope, $stateParams, $element) {
     function sideMenuItem(date,name=""){
         this._date = new Date();
         this._date.setDate(date.getDate());
-        this._id = (date.getDay()-1+7)%7 + 1;
 
         if(name==""){
+            this._id = (date.getDay()-1+7)%7 +1;
             switch(date.getDay()){
                 case 0: this._name = "Domingo"; break;
                 case 1: this._name = "Segunda-Feira"; break;
@@ -26,8 +26,10 @@ function ($scope, $stateParams, $element) {
                 default: this._name = "undefined"; break;
             }
         }
-        else
+        else{
+            this._id = 0;
             this._name = name;
+        }
 
         this.getDayName = function() {
             return this._name;
@@ -63,6 +65,15 @@ function ($scope, $stateParams, $element) {
         6: "sabado",
         7: "domingo"
     };
+
+    /*$scope.set_uisref = function(item){
+        return {
+          url: '/page2',
+          templateUrl: 'templates/segundaFeira.html',
+          controller: 'segundaFeiraCtrl'
+        }
+    }*/
+
 }])
 
 .controller('homeCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
