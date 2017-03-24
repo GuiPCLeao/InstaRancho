@@ -86,7 +86,7 @@ function ($scope, $stateParams) {
 }])
 
 .controller('tercaFeiraCtrl', ['$scope', '$stateParams',
-e
+
 function ($scope, $stateParams) {
 
 
