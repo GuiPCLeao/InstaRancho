@@ -71,105 +71,92 @@ function ($scope, $stateParams, $element) {
 
 }])
 
-.controller('homeCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('homeCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('segundaFeiraCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('segundaFeiraCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('tercaFeiraCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('tercaFeiraCtrl', ['$scope', '$stateParams',
+e
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('quartaFeiraCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('quartaFeiraCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('quintaFeiraCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('quintaFeiraCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('sextaFeiraCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('sextaFeiraCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('sabadoCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('sabadoCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('domingoCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('domingoCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('cafeCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('cafeCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('almocoCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('almocoCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('jantarCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('jantarCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('ceiaCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('ceiaCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
 }])
 
-.controller('noticiasCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('noticiasCtrl', ['$scope', '$stateParams',
+
 function ($scope, $stateParams) {
 
 
