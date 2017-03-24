@@ -13,6 +13,17 @@ function ($scope, $stateParams, $element) {
         this._date = new Date();
         this._date.setDate(date.getDate());
 
+        this._uisreflist = [
+            "tabs.home",
+            "segundaFeira",
+            "tercaFeira",
+            "quartaFeira",
+            "quintaFeira",
+            "sextaFeira",
+            "sabado",
+            "domingo"
+        ];
+
         if(name==""){
             this._id = (date.getDay()-1+7)%7 +1;
             switch(date.getDay()){
@@ -34,6 +45,9 @@ function ($scope, $stateParams, $element) {
         this.getDayName = function() {
             return this._name;
         }
+        this.getUiSRef = function() {
+            return this._uisreflist[this._id];
+        }
         this.getId = function(){
             return this._id;
         }
@@ -54,25 +68,6 @@ function ($scope, $stateParams, $element) {
         d.setDate($scope.lastmonday.getDate()+i);
         $scope.sidemenuitens[i+1] = new sideMenuItem(d);
     }
-
-    $scope.UiSref_list = {
-        0: "tabs.home",
-        1: "segundaFeira",
-        2: "tercafeira",
-        3: "quartafeira",
-        4: "quintafeira",
-        5: "sextafeira",
-        6: "sabado",
-        7: "domingo"
-    };
-
-    /*$scope.set_uisref = function(item){
-        return {
-          url: '/page2',
-          templateUrl: 'templates/segundaFeira.html',
-          controller: 'segundaFeiraCtrl'
-        }
-    }*/
 
 }])
 
