@@ -2,53 +2,31 @@
     <ion-nav-buttons side="left">
       <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
     </ion-nav-buttons>
-  <ion-content padding="false" class="has-header">
+  <ion-content ng-controller="ExampleController" padding="false" class="has-header">
+    {{ resp("segunda") }}
     <ion-list id="segundaFeira-list11">
       <ion-item class="item-divider" id="segundaFeira-list-item-divider1"> Café</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item8">
-        <i class="icon ion-android-done"></i>Café/Leite</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item9">
-        <i class="icon ion-android-done"></i>Pães</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item10">
-        <i class="icon ion-android-done"></i>Mingau</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item11">
-        <i class="icon ion-android-done"></i>Manteiga</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item32">
-        <i class="icon ion-android-done"></i>Ovos Mexidos</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item34">
-        <i class="icon ion-android-done"></i>Queijo Minas</ion-item>
+      <div ng-repeat="item in cafe">
+        <ion-item class="item-icon-left" id="segundaFeira-list-item1">
+          <i class="icon ion-android-done"></i>{{ item }}</ion-item>
+      </div>
     </ion-list>
-    <ion-list id="segundaFeira-list13">
+
+    <ion-list id="segundaFeira-list12">
       <ion-item class="item-divider" id="segundaFeira-list-item-divider2"> Almoço</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item41">
-        <i class="icon ion-android-done"></i>Salada</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item42">
-        <i class="icon ion-android-done"></i>Arroz e Feijão</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item43">
-        <i class="icon ion-android-done"></i>Lombo assado c/ cebola e pimentão</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item44">
-        <i class="icon ion-android-done"></i>Polenta</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item45">
-        <i class="icon ion-android-done"></i>Sobremesa</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item46">
-        <i class="icon ion-android-done"></i>Refresco/Café</ion-item>
+      <div ng-repeat="item in almoco">
+        <ion-item class="item-icon-left" id="segundaFeira-list-item2">
+          <i class="icon ion-android-done"></i>{{ item }}</ion-item>
+      </div>
     </ion-list>
-    <ion-list id="segundaFeira-list14">
+
+    <ion-list id="segundaFeira-list13">
       <ion-item class="item-divider" id="segundaFeira-list-item-divider3"> Jantar</ion-item>
+      <div ng-repeat="item in jantar">
+        <ion-item class="item-icon-left" id="segundaFeira-list-item3">
+          <i class="icon ion-android-done"></i>{{ item }}</ion-item>
+      </div>
     </ion-list>
-    <ion-list id="segundaFeira-list15">
-      <ion-item class="item-icon-left" id="segundaFeira-list-item47">
-        <i class="icon ion-android-done"></i>Salada</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item48">
-        <i class="icon ion-android-done"></i>Arroz e Feijão</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item49">
-        <i class="icon ion-android-done"></i>Almôndega ao sugo</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item50">
-        <i class="icon ion-android-done"></i>Macarrão ao alho e óleo</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item51">
-        <i class="icon ion-android-done"></i>Sobremesa</ion-item>
-      <ion-item class="item-icon-left" id="segundaFeira-list-item52">
-        <i class="icon ion-android-done"></i>Refresco/Café</ion-item>
-    </ion-list>
+
   </ion-content>
 </ion-view>
