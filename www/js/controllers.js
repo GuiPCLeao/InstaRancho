@@ -53,13 +53,8 @@ function ($scope, $stateParams, $element) {
             return this._id;
         }
         this.getFormatedDate = function(){
-<<<<<<< HEAD
             var d = this._date.getDate().toString(), m = (this._date.getMonth()+1).toString();
-=======
-            var d = this._date.getDate().toString(), m = this._date.getMonth().toString();
-            var x = +m + +'1';
-            m = "0"+x;
->>>>>>> 1ea5b768b86b441e7eedbe448ae896611fdc4bf3
+
             if(d.length<2)
                 d = "0"+d;
             if(m.length<2)
