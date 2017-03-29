@@ -1,9 +1,53 @@
 /* Empty. Add your own CSS if you like */
-
-/*i.ion-ios-paper-outline {
-    font-size: 500px; !important
+/*  241,929    121,067  */
+@font-face{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 45sp;
+    src: fonts/Roboto-Regular.ttf;
 }
 
-ion-header-bar.sideMenuHead {
-    text-align: left; !important
-}*/
+.mascote{
+    display: block;
+    margin: auto;
+    height: 75%;
+    width: 75%;
+}
+
+.welcome{
+    background-color: #E0E0E0;
+
+    margin: auto;
+    padding: 5%;
+    width: 75%;
+    min-height: 200pt;
+    border-radius: 10pt;
+
+    font-family: Roboto, sans-serif;
+
+    text-indent: 5%;
+    text-align: middle;
+}
+
+ .welcome h1{
+    font-weight: bold;
+    font-size: 20sp;
+
+    text-align: center;
+}
+
+.welcome p{
+    color: #000;
+    font-weight: normal;
+    font-size: 14sp;
+
+    text-align: justify;
+}
+
+.welcome .goodbye{
+    /*color: positive;*/
+
+    font-size: 25sp;
+
+    text-align: right;
+}

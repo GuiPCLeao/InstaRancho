@@ -12,6 +12,7 @@ function ($scope, $stateParams, $element) {
     function sideMenuItem(date,name=""){
         this._date = new Date();
         this._date.setDate(date.getDate());
+        this._date.setMonth(date.getMonth());
 
         this._uisreflist = [
             "tabs.home",
@@ -52,7 +53,7 @@ function ($scope, $stateParams, $element) {
             return this._id;
         }
         this.getFormatedDate = function(){
-            var d = this._date.getDate().toString(), m = this._date.getMonth().toString();
+            var d = this._date.getDate().toString(), m = (this._date.getMonth()+1).toString();
             if(d.length<2)
                 d = "0"+d;
             if(m.length<2)
