@@ -44,7 +44,7 @@
     text-align: justify;
 }
 
-.welcome .goodbye{
+.welcome #goodbye{
     /*color: positive;*/
 
     font-size: 25sp;
