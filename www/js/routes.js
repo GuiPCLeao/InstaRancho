@@ -62,7 +62,7 @@ angular.module('app.routes', [])
     controller: 'domingoCtrl'
   })
 
-  .state('tabs.caf', {
+  .state('tabs.cafe', {
     url: '/page10',
     views: {
       'tab5': {
@@ -72,7 +72,7 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('tabs.almoO', {
+  .state('tabs.almoco', {
     url: '/page11',
     views: {
       'tab8': {
@@ -98,16 +98,6 @@ angular.module('app.routes', [])
       'tab7': {
         templateUrl: 'templates/ceia.html',
         controller: 'ceiaCtrl'
-      }
-    }
-  })
-
-  .state('tabs.notCias', {
-    url: '/page14',
-    views: {
-      'tab9': {
-        templateUrl: 'templates/noticias.html',
-        controller: 'noticiasCtrl'
       }
     }
   })

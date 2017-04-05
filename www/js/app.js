@@ -105,6 +105,7 @@ example.controller("ExampleController", function($scope, $rootScope, Example) {
     $scope.cafe = [];
     $scope.almoco = [];
     $scope.jantar = [];
+    $scope.ceia = [];
     //$scope.tamanho;
     /*
     $scope.$on('HitDB', function(ev, data) {
@@ -126,26 +127,26 @@ example.controller("ExampleController", function($scope, $rootScope, Example) {
 
     $scope.resp = function(dia) {
         switch (dia) {
-          case 1:
+        case 0:
+              dia = "domingo";
+              break;
+        case 1:
             dia = "segunda";
             break;
-          case 2:
+        case 2:
             dia = "terca";
             break;
-          case 3:
+        case 3:
             dia = "quarta";
             break;
-          case 4:
+        case 4:
             dia = "quinta";
             break;
-          case 5:
+        case 5:
             dia = "sexta";
             break;
-          case 6:
+        case 6:
             dia = "sabado";
-            break;
-          case 7:
-            dia = "domingo";
             break;
         }
         var PeopleObject = new Parse.Object(dia);
@@ -153,9 +154,9 @@ example.controller("ExampleController", function($scope, $rootScope, Example) {
         query.find({
                     success: function(results) {
                         Example.save(results);
-                        var n_cafe = 0;
-                        var n_almoco = 0;
-                        var n_jantar = 0;
+                        var n_cafe, n_almoco, n_jantar, n_ceia;
+                        n_cafe = n_almoco = n_jantar = n_ceia = 0;
+
                         for (var i = 0; i < results.length; i++) {
 
                             var temp1 = results[i].get("cafe");
@@ -167,7 +168,7 @@ example.controller("ExampleController", function($scope, $rootScope, Example) {
                             if (temp3 != null && temp3 != '') {$scope.jantar[n_jantar] = temp3; n_jantar++;}
                         }
                         //$scope.safeApply();
-                        $scope.Apply();
+                        //$scope.$apply();
                         //results.saveEventually();
                     },
                     error: function(error) {
@@ -177,4 +178,5 @@ example.controller("ExampleController", function($scope, $rootScope, Example) {
     }
 
     $scope.today = (new Date()).getDay();
+     console.log($scope.today);
 });
